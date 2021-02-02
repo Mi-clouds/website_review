@@ -10,41 +10,228 @@
     <title>Version Control</title>
 </head>
 <body>
-    <h1>Introduction to using Git</h1>
-    <p>GIT is a type of Version Control where code can easily be shared between developers. Code is datemarked and earlie versions of code can be retrieved. It is described as "treeish" as branches of code with alternative functions can be created stored, shared and reintroduced into the main branch again.</p> 
+    <header>Welcome to Get in Tech Revision</header>
+    <nav>
+        <ul><a href=index.html>Link to index</a></ul>
+        <ul><a href="#">Contact details</a></ul>
+    </nav>
+    <article>
+        <h1>Introduction to using Git</h1>
+            <p>GIT is a type of Version Control where code can easily be shared between developers. Code is datemarked and earlie versions of code can be retrieved. It is described as "treeish" as branches of code with alternative functions can be created stored, shared and reintroduced into the main branch again.</p> 
+            <p>Version control system (VCS) - This is a system that records changes to files, creating a history of changes allowing the software engineer to roll back to a previous state of a file if something goes wrong a log allows the user to compare different versions.</p>
+    
+            <p>There are two different types of version control.</p>
+            <p>CVCS Centralised version Control systems -This allows multiple developers to collaborate on projects (CVS, Subersions and PERforce). It is a single server that contains all versioned files. Clients are able to check out files from this source.</p>
+        
+            <p>DVCS distributed version control systems -These do not just check out the most local snap short of a file. They mirror the repository. Each client is like a backup of the repository.</p>
+    </article>
 
-    <p>There are two different types of version control. </p>
+    <article>
+        <h1>Git Bash</h1>
+        <p>GIT bash was developed by Linux and it is open source. Its aim were to create a DVCS system that was fast, simple, strong support for non linear development fully distributed and able to handle lare projects like the linux kernal efficiency</p>
 
+    </article>
+    
+    <article>
+        <h2>How to set up a repository in GitHub and collaborate with a colleague</h2>
 
-    <h2>How to set up a repository in GitHub and collaborate with a colleague</h2>
-    <p> Person A
-        Person B
-        <ol>
-            <li>collaborate</li>
-            <li>copy url from github</li>
-            <li>git clone with url from git repository</li>
-            <li>cd to new folder/ repo</li>
-            <li>git init (establish as internal repository)</li>
-            <li>open</li>
-        </ol>
+        <h1>What is the value of Version Control</h1>
+            <p>Keep track of code and change. One copy of the code is kept in a centralised place that everyone has access to. This means no more mailing around code or confusion when trying to integrate it. The management of the system is automated.</p>
+            <p>Branch code to work on specific parts and version 2.3 doesn't need to die because someone else wants to look at version 3</p>                
+            <p>Free repository hosting site available:</p>
+                <list>   
+                    <li>Bitbucket</li>
+                    <li>Github</li>
+                </list> 
+    </article>
+    
+    <article>
+        <h1>Step 1: Git configuration</h1>
+            <p>Git keeps track of who performs version control actions. Therefore, each user must have their Git configured with their own name and email.</p>
+        
+            <p>git config --global user.name "yourname"</p>
+            <p>git config -- global user,email "mail@example.com.au"</p>
+        
+            <p>These can then be checked by: git config user.xxx</p>
+        
+            <p>You can list all the configurations with: git config --list</p>
+    </article>
 
-    <h2>How to set up a repository locally and upload it to Githbub to share with colleagues</h2>
-  
+    <article>
+        <h2>Step 2 <h2> 
+            <list>
+                <ol>
+                    <li>1 Create a repository on a hosting site or your own server</li>
+                    <li>2 Checkout the repository to your own machine</li>
+                    <li>3 Add some code</li>
+                    <li>4 Commit your changes to your local repository</li>
+                    <li>5 Push changes to the remote repository</li>
+                </ol>
+            </list>            
+        <h2>Commands to complete this</h2>
+            </list> 
+                <ul>  
+                    <li>git clone <<<repo>>></li>
+                    <li>git add <<file names>> add a file</li>
+                    <li>git commit -m "meaningful message"</li>
+                    <li>git push</li>
+                    <li>git pull</li> 
+                </ul>     
+            </list>       
+    </article>
+    
+    <article>
+        <h2>How to set up a repository locally and upload it to Githbub to share with colleagues</h2>
+            <ol>
+                <li>collaborate</li>
+                <li>copy url from github</li>
+                <li>git clone with url from git repository</li>
+                <li>cd to new folder/ repo</li>
+                <li>git init (establish as internal repository)</li>
+                <li>open</li>
+            </ol>
+    </article>
+
+    <article>
+        <h2>Git etymology</h2>
+            <p>Git commands commands all follow the same convention starting with the word <i>git</i> followed by optional <i>switch</i>, next a <i>GIT command (mandatory)</i>, then optional arguments</p>
+            <p>git [switches] <commands> [<args>]</p>
+            <p>git -p config --global user.name "Dave"</p>
+    </article>
+
+    <article>
+        <h1>List of git commands in the Git Bash Terminal</h1>
+            <table>
+                <tr>
+                    <th>Git Command</th>
+                    <th>Function</th>
+                </tr>
+                <tr>
+                    <td>git init</td>
+                    <td>make make a folder into a Git repository</td>
+
+                <tr>
+                    <td>git status</td>
+                    <td>what is the status of the repsitory</td>
+                </tr>
+                <tr>
+                    <td>git add file name</td>
+                    <td>add the named file into the repository</td>
+                </tr>
+                <tr>
+                    <td>git add .</td>
+                    <td>add all files into the repository</td>
+                </tr>
+                <tr>
+                    <td>git commit - m "useful_name"</td>
+                    <td>commit the added files to the repository and label the action with a useful/meaningful name</td>
+                </tr> 
+                <tr>
+                    <td>code .</td>
+                    <td>opens Visual Studio in a PC</td>
+                </tr>   
+                <tr>
+                    <td>git log</td>
+                    <td>read my code diary in my repository</td>
+                </tr>  
+                <tr>
+                    <td>git log --oneline</td>
+                    <td>show concise code diary in my repository</td>
+                </tr>  
+                <tr>
+                    <td>git checkout</td>
+                    <td>number of repositories</td>
+                </tr>     
+                <tr>
+                    <td>cd ..</td>
+                    <td>go up a level</td>
+                </tr>      
+                <tr>
+                    <td>rmdir</td>
+                    <td>remove add file name to remove a file or folder</td>
+                </tr>
+                <tr>
+                    <td>git change master main</td>
+                    <td>change master to main file</td>
+                </tr>   
+                <tr>
+                    <td>git rm file1</td>
+                    <td>remove file1</td>
+                </tr>  
+                <tr>
+                    <td>git checkout master</td>
+                    <td>explore contents of master</td>
+                </tr> 
+                <tr>
+                    <td>git fetch </td>
+                    <td>explore contents of master</td>
+                </tr> 
+                <tr>
+                    <td>git status</td>
+                    <td>explore contents of master</td>
+                </tr>
+                <tr>
+                    <td>git pull</td>
+                    <td>explore contents of master</td>
+                </tr> 
+                <tr>
+                    <td>git push</td>
+                    <td>explore contents of master</td>
+                </tr> 
+                <tr>
+                    <td>git ignore??</td>
+                    <td>????????</td>
+                </tr>    
+                <tr>
+                    <td>git help</td>
+                    <td>????</td>
+                </tr> 
+                <tr>
+                    <td>git help tutorial</td>
+                    <td>?????</td>
+                </tr>
+                <tr>
+                    <td>git help everyday</td>
+                    <td>????</td>
+                </tr>    
+                <tr>
+                    <td>git mv file new_name</td>
+                    <td>rename file</td>
+                </tr>     
+                <tr>
+                    <td>???git commit - "file1 removed"???</td>
+                    <td>remove specifi file</td>
+                </tr> 
+            </table>
+        </p>
+    </article>        
+
+    <article>
+        <h1>Watch out for version control hygiene</h1>
+            <p>insert more information when needed</p>
+    
+        <h3>If you are unsure - always make a new repository!</h3>  
+    </article>
+
     <article>
         <h2>Can't find the green collaborate button on the GIT website?</h2>
-        <p>Follow the steps below to access the collaborate button. 
-        <list>
-            <ol>Open the Repository on GitHut.</ol>
-            <ol>Click settings from the top menu.</ol>
-            <ol>Click on Manage Access.</ol>
-            <ol>Select the button "Invite a Collatorator!" </ol>
-            <ol>Use the input field to search for a collaborator.</ol>
-        </p>
+            <p>Follow the steps below to access the collaborate button. </p>
+                <list>
+                    <ol>Open the Repository on GitHut.</ol>
+                    <ol>Click settings from the top menu.</ol>
+                    <ol>Click on Manage Access.</ol>
+                    <ol>Select the button "Invite a Collatorator!" </ol>
+                    <ol>Use the input field to search for a collaborator.</ol>
     </article>
-        
-                      
-        
-    </p>
-        <footer></footer>
+
+    <footer>
+        <hr>
+        <p>&copy; 2021</p>        
+    </footer>
+
+    <script>
+        window.alert("There are many spelling mistakes on this page.");
+        alert("Are you absolutely certain you wish to view it?");
+    </script>
 </body>
 </html>
